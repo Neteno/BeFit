@@ -35,8 +35,8 @@ namespace BeFit.Migrations
                     b.Property<int>("TrainingSessionId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<decimal>("Weight")
-                        .HasColumnType("decimal(8,2)");
+                    b.Property<int>("Weight")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
