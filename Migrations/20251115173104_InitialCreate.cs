@@ -191,7 +191,7 @@ namespace BeFit.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     TrainingSessionId = table.Column<int>(type: "INTEGER", nullable: false),
                     ExerciseTypeId = table.Column<int>(type: "INTEGER", nullable: false),
-                    Weight = table.Column<decimal>(type: "decimal(8,2)", nullable: false),
+                    Weight = table.Column<int>(type: "INTEGER", nullable: false),
                     Sets = table.Column<int>(type: "INTEGER", nullable: false),
                     Reps = table.Column<int>(type: "INTEGER", nullable: false)
                 },
