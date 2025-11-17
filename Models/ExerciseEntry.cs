@@ -21,9 +21,8 @@ namespace BeFit.Models
 
         // Obciążenie w kg (może być 0 jeśli ćwiczenie bez obciążenia)
         [Range(0, 10000)]
-        [Column(TypeName = "decimal(8,2)")]
         [Display(Name = "Obciążenie (kg)")]
-        public decimal Weight { get; set; }
+        public int Weight { get; set; }
 
         [Range(1, 100)]
         [Display(Name = "Serie")]
