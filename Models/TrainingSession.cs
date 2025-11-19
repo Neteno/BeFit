@@ -5,6 +5,11 @@ namespace BeFit.Models
     public class TrainingSession
     {
         public int Id { get; set; }
+
+        [Display(Name = "Created by")]
+        public string CreatedById { get; set; }
+        public virtual AppUser? CreatedBy { get; set; }
+
         [Display(Name = "Data i godzina rozpoczęcia")]
         [Required]
         public DateTime Start { get; set; }

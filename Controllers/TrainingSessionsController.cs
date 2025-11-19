@@ -7,13 +7,17 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BeFit.Data;
 using BeFit.Models;
+using System.Security.Claims;
 
 namespace BeFit.Controllers
 {
     public class TrainingSessionsController : Controller
     {
         private readonly ApplicationDbContext _context;
-
+        private string GetUserId()
+        {
+            return User.FindFirstValue(ClaimTypes.NameIdentifier);
+        }
         public TrainingSessionsController(ApplicationDbContext context)
         {
             _context = context;
