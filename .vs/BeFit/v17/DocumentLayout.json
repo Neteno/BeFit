@@ -3,22 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|c:\\users\\szymon\\desktop\\studia\\studia_s5\\programowanie_zawansowane\\befit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Migrations\\20251119113852_AddUsers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251119113852_AddUsers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|c:\\users\\szymon\\desktop\\studia\\studia_s5\\programowanie_zawansowane\\befit\\controllers\\exerciseentriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|solutionrelative:controllers\\exerciseentriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|c:\\users\\szymon\\desktop\\studia\\studia_s5\\programowanie_zawansowane\\befit\\controllers\\trainingsessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|solutionrelative:controllers\\trainingsessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|c:\\users\\szymon\\desktop\\studia\\studia_s5\\programowanie_zawansowane\\befit\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 104,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -27,40 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "Title": "20251119113852_AddUsers.cs",
+              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Migrations\\20251119113852_AddUsers.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251119113852_AddUsers.cs",
+              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Migrations\\20251119113852_AddUsers.cs",
+              "RelativeToolTip": "Migrations\\20251119113852_AddUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:16:28.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TrainingSessionsController.cs",
-              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Controllers\\TrainingSessionsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TrainingSessionsController.cs",
-              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Controllers\\TrainingSessionsController.cs",
-              "RelativeToolTip": "Controllers\\TrainingSessionsController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAowDoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:08:45.064Z",
+              "WhenOpened": "2025-11-19T11:38:52.92Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ExerciseEntriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Controllers\\ExerciseEntriesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ExerciseEntriesController.cs",
-              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Controllers\\ExerciseEntriesController.cs",
-              "RelativeToolTip": "Controllers\\ExerciseEntriesController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAcwD8AAAAAAAAAAAAAAA==",
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:06:21.142Z",
+              "WhenOpened": "2025-11-19T11:38:24.455Z",
               "EditorCaption": ""
             }
           ]
