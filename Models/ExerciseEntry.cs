@@ -6,6 +6,9 @@ namespace BeFit.Models
     public class ExerciseEntry
     {
         public int Id { get; set; }
+        public string CreatedById { get; set; }
+        [Display(Name = "Created by")]
+        public virtual AppUser? CreatedBy { get; set; }
 
         // Relacja do TrainingSession
         [Required]
