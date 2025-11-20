@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using BeFit.Data;
 using BeFit.Models;
 using System.Security.Claims;
+using BeFit.DTOs;
 
 namespace BeFit.Controllers
 {
@@ -16,7 +17,7 @@ namespace BeFit.Controllers
         private readonly ApplicationDbContext _context;
         private string GetUserId()
         {
-            return User.FindFirstValue(ClaimTypes.NameIdentifier);
+            return User.FindFirstValue(ClaimTypes.NameIdentifier) ?? string.Empty;
         }
         public TrainingSessionsController(ApplicationDbContext context)
         {
@@ -26,25 +27,8 @@ namespace BeFit.Controllers
         // GET: TrainingSessions
         public async Task<IActionResult> Index()
         {
-            return View(await _context.TrainingSessions.ToListAsync());
-        }
-
-        // GET: TrainingSessions/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var trainingSession = await _context.TrainingSessions
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (trainingSession == null)
-            {
-                return NotFound();
-            }
-
-            return View(trainingSession);
+            var applicationDbContext = _context.TrainingSessions.Where(e => e.CreatedById == GetUserId()).Include(e => e.ExerciseEntries);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: TrainingSessions/Create
@@ -58,8 +42,17 @@ namespace BeFit.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Start,End")] TrainingSession trainingSession)
+        public async Task<IActionResult> Create([Bind("Id,Start,End")] TrainingSessionDTO trainingSessionDTO)
         {
+            TrainingSession trainingSession = new TrainingSession()
+            {
+                Id = trainingSessionDTO.Id,
+                Start = trainingSessionDTO.Start,
+                End = trainingSessionDTO.End,
+                ExerciseEntries = trainingSessionDTO.ExerciseEntries,
+                CreatedById = GetUserId()
+            };
+
             if (ModelState.IsValid)
             {
                 _context.Add(trainingSession);
@@ -77,7 +70,9 @@ namespace BeFit.Controllers
                 return NotFound();
             }
 
-            var trainingSession = await _context.TrainingSessions.FindAsync(id);
+            var trainingSession = await _context.TrainingSessions
+                .Where(e => e.CreatedById == GetUserId())
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (trainingSession == null)
             {
                 return NotFound();
@@ -90,9 +85,23 @@ namespace BeFit.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Start,End")] TrainingSession trainingSession)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Start,End")] TrainingSessionDTO trainingSessionDTO)
         {
-            if (id != trainingSession.Id)
+            if (id != trainingSessionDTO.Id)
+            {
+                return NotFound();
+            }
+
+            TrainingSession trainingSession = new TrainingSession()
+            {
+                Id = trainingSessionDTO.Id,
+                Start = trainingSessionDTO.Start,
+                End = trainingSessionDTO.End,
+                ExerciseEntries = trainingSessionDTO.ExerciseEntries,
+                CreatedById = GetUserId()
+            };
+
+            if (!TrainingSessionExists(trainingSession.Id, GetUserId()))
             {
                 return NotFound();
             }
@@ -106,7 +115,7 @@ namespace BeFit.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TrainingSessionExists(trainingSession.Id))
+                    if (!TrainingSessionExists(trainingSession.Id,GetUserId()))
                     {
                         return NotFound();
                     }
@@ -129,6 +138,8 @@ namespace BeFit.Controllers
             }
 
             var trainingSession = await _context.TrainingSessions
+                .Where(e => e.CreatedById == GetUserId())
+                .Include(e => e.ExerciseEntries)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (trainingSession == null)
             {
@@ -153,9 +164,9 @@ namespace BeFit.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool TrainingSessionExists(int id)
+        private bool TrainingSessionExists(int id,string userId)
         {
-            return _context.TrainingSessions.Any(e => e.Id == id);
+            return _context.TrainingSessions.Any(e => e.Id == id && e.CreatedById == userId);
         }
     }
 }
