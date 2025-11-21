@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|c:\\users\\szymon\\desktop\\studia\\studia_s5\\programowanie_zawansowane\\befit\\dtos\\trainingsessiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|solutionrelative:dtos\\trainingsessiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|c:\\users\\szymon\\desktop\\studia\\studia_s5\\programowanie_zawansowane\\befit\\models\\exerciseentrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|solutionrelative:models\\exerciseentrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|c:\\users\\szymon\\desktop\\studia\\studia_s5\\programowanie_zawansowane\\befit\\views\\trainingsessions\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|solutionrelative:views\\trainingsessions\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|c:\\users\\szymon\\desktop\\studia\\studia_s5\\programowanie_zawansowane\\befit\\controllers\\trainingsessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|solutionrelative:controllers\\trainingsessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|c:\\users\\szymon\\desktop\\studia\\studia_s5\\programowanie_zawansowane\\befit\\controllers\\exerciseentriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|solutionrelative:controllers\\exerciseentriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|c:\\users\\szymon\\desktop\\studia\\studia_s5\\programowanie_zawansowane\\befit\\views\\trainingsessions\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|solutionrelative:views\\trainingsessions\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,60 +21,46 @@
       "VerticalTabListWidth": 104,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 213,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TrainingSessionsController.cs",
-              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Controllers\\TrainingSessionsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TrainingSessionsController.cs",
-              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Controllers\\TrainingSessionsController.cs",
-              "RelativeToolTip": "Controllers\\TrainingSessionsController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T12:18:50.415Z",
-              "IsPinned": true,
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Views\\TrainingSessions\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\TrainingSessions\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Views\\TrainingSessions\\Details.cshtml",
+              "RelativeToolTip": "Views\\TrainingSessions\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T14:23:16.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ExerciseEntryDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Models\\ExerciseEntryDTO.cs",
-              "RelativeDocumentMoniker": "Models\\ExerciseEntryDTO.cs",
-              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Models\\ExerciseEntryDTO.cs*",
-              "RelativeToolTip": "Models\\ExerciseEntryDTO.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Title": "TrainingSessionsController.cs",
+              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Controllers\\TrainingSessionsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TrainingSessionsController.cs",
+              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Controllers\\TrainingSessionsController.cs",
+              "RelativeToolTip": "Controllers\\TrainingSessionsController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T12:26:27.59Z",
+              "WhenOpened": "2025-11-21T14:11:17.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TrainingSessionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\DTOs\\TrainingSessionDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\TrainingSessionDTO.cs",
-              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\DTOs\\TrainingSessionDTO.cs",
-              "RelativeToolTip": "DTOs\\TrainingSessionDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T12:26:13.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ExerciseEntriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Controllers\\ExerciseEntriesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ExerciseEntriesController.cs",
-              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Controllers\\ExerciseEntriesController.cs",
-              "RelativeToolTip": "Controllers\\ExerciseEntriesController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T12:19:09.356Z",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Views\\TrainingSessions\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\TrainingSessions\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Views\\TrainingSessions\\Delete.cshtml",
+              "RelativeToolTip": "Views\\TrainingSessions\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T14:11:09.983Z",
               "EditorCaption": ""
             }
           ]

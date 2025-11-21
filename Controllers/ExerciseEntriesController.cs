@@ -27,7 +27,7 @@ namespace BeFit.Controllers
         // GET: ExerciseEntries
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.ExerciseEntries.Include(e => e.ExerciseType).Include(e => e.TrainingSession);
+            var applicationDbContext = _context.ExerciseEntries.Where(e => e.CreatedById == GetUserId()).Include(e => e.ExerciseType).Include(e => e.TrainingSession);
             return View(await applicationDbContext.ToListAsync());
         }
 

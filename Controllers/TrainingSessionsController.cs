@@ -27,9 +27,34 @@ namespace BeFit.Controllers
         // GET: TrainingSessions
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.TrainingSessions.Where(e => e.CreatedById == GetUserId()).Include(e => e.ExerciseEntries);
-            return View(await applicationDbContext.ToListAsync());
+            var applicationDbContext = _context.TrainingSessions
+                .Where(e => e.CreatedById == GetUserId())
+                .Include(e => e.ExerciseEntries)
+                .Select(e => new TrainingSessionDTO(e)).ToListAsync();
+
+            return View(await applicationDbContext);
+
         }
+        // GET: TrainingSessions/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var trainingSession = await _context.TrainingSessions
+                .Where(e => e.CreatedById == GetUserId())
+                .Include(e => e.ExerciseEntries)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (trainingSession == null)
+            {
+                return NotFound();
+            }
+
+            return View(trainingSession);
+        }
+
 
         // GET: TrainingSessions/Create
         public IActionResult Create()
@@ -42,14 +67,12 @@ namespace BeFit.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Start,End")] TrainingSessionDTO trainingSessionDTO)
+        public async Task<IActionResult> Create(TrainingSessionDTO trainingSessionDTO)
         {
             TrainingSession trainingSession = new TrainingSession()
             {
-                Id = trainingSessionDTO.Id,
                 Start = trainingSessionDTO.Start,
                 End = trainingSessionDTO.End,
-                ExerciseEntries = trainingSessionDTO.ExerciseEntries,
                 CreatedById = GetUserId()
             };
 
@@ -94,10 +117,9 @@ namespace BeFit.Controllers
 
             TrainingSession trainingSession = new TrainingSession()
             {
-                Id = trainingSessionDTO.Id,
                 Start = trainingSessionDTO.Start,
                 End = trainingSessionDTO.End,
-                ExerciseEntries = trainingSessionDTO.ExerciseEntries,
+                ExerciseEntries =new List<ExerciseEntry>(),
                 CreatedById = GetUserId()
             };
 
@@ -126,26 +148,6 @@ namespace BeFit.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(trainingSession);
-        }
-
-        // GET: TrainingSessions/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var trainingSession = await _context.TrainingSessions
-                .Where(e => e.CreatedById == GetUserId())
-                .Include(e => e.ExerciseEntries)
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (trainingSession == null)
-            {
-                return NotFound();
-            }
-
             return View(trainingSession);
         }
 
