@@ -9,9 +9,11 @@ using BeFit.Data;
 using BeFit.Models;
 using System.Security.Claims;
 using BeFit.DTOs;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BeFit.Controllers
 {
+    [Authorize]
     public class ExerciseEntriesController : Controller
     {
         private readonly ApplicationDbContext _context;

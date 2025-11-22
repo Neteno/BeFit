@@ -2,9 +2,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BeFit.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace BeFit.Controllers
 {
+    [Authorize]
     public class StatsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -13,6 +16,10 @@ namespace BeFit.Controllers
         {
             _context = context;
         }
+        private string GetUserId()
+        {
+            return User.FindFirstValue(ClaimTypes.NameIdentifier) ?? string.Empty;
+        }
 
         public async Task<IActionResult> Index()
         {
@@ -20,6 +27,7 @@ namespace BeFit.Controllers
 
             var stats = await _context.ExerciseEntries
                 .Where(e => e.TrainingSession.Start >= fromDate)
+                .Where(e => e.CreatedById == GetUserId())
                 .GroupBy(e => e.ExerciseType.Name)
                 .Select(g => new ExerciseStats
                 {
