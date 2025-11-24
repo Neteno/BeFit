@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace BeFit.Migrations
 {
     /// <inheritdoc />
-    public partial class NazwaMigracji : Migration
+    public partial class Internal : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

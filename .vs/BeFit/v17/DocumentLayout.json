@@ -3,77 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|c:\\users\\szymon\\desktop\\studia\\studia_s5\\programowanie_zawansowane\\befit\\views\\trainingsessions\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|solutionrelative:views\\trainingsessions\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|c:\\users\\szymon\\desktop\\studia\\studia_s5\\programowanie_zawansowane\\befit\\controllers\\trainingsessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|solutionrelative:controllers\\trainingsessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-<<<<<<< Updated upstream
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|c:\\users\\szymon\\desktop\\studia\\studia_s5\\programowanie_zawansowane\\befit\\views\\trainingsessions\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|solutionrelative:views\\trainingsessions\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-=======
->>>>>>> Stashed changes
+      "AbsoluteMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|c:\\users\\szymon\\desktop\\studia\\studia_s5\\programowanie_zawansowane\\befit\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1138F9A-3885-4A18-B115-F278B7D9C0B4}|BeFit.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 104,
       "DocumentGroups": [
         {
-          "DockedWidth": 213,
-          "SelectedChildIndex": 0,
+          "DockedHeight": 113,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Views\\TrainingSessions\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\TrainingSessions\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Views\\TrainingSessions\\Details.cshtml",
-              "RelativeToolTip": "Views\\TrainingSessions\\Details.cshtml",
-<<<<<<< Updated upstream
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAwAAAAAAAAAA==",
->>>>>>> Stashed changes
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-21T14:23:16.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TrainingSessionsController.cs",
-              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Controllers\\TrainingSessionsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TrainingSessionsController.cs",
-              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Controllers\\TrainingSessionsController.cs",
-              "RelativeToolTip": "Controllers\\TrainingSessionsController.cs",
-<<<<<<< Updated upstream
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC8AAAAwAAAAAAAAAA==",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T14:11:17.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Views\\TrainingSessions\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\TrainingSessions\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Szymon\\Desktop\\Studia\\Studia_S5\\Programowanie_Zawansowane\\BeFit\\Views\\TrainingSessions\\Delete.cshtml",
-              "RelativeToolTip": "Views\\TrainingSessions\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-21T14:11:09.983Z",
-=======
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T14:11:17.781Z",
->>>>>>> Stashed changes
+              "WhenOpened": "2025-11-22T17:40:06.48Z",
               "EditorCaption": ""
             }
           ]

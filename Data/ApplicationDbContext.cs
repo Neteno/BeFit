@@ -1,4 +1,5 @@
 ﻿using BeFit.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,8 +11,16 @@ namespace BeFit.Data
             : base(options)
         {
         }
-        public DbSet<ExerciseType> ExerciseTypes { get; set; }
-        public DbSet<TrainingSession> TrainingSessions { get; set; }
-        public DbSet<ExerciseEntry> ExerciseEntries { get; set; }
+        public DbSet<ExerciseType> ExerciseTypes { get; set; } = default!;
+        public DbSet<TrainingSession> TrainingSessions { get; set; } = default!;
+        public DbSet<ExerciseEntry> ExerciseEntries { get; set; } = default!;
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<IdentityRole>().HasData(new IdentityRole() {Name = "Admin", NormalizedName = "ADMIN" });
+
+        }
     }
 }
