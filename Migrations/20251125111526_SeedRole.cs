@@ -13,12 +13,12 @@ namespace BeFit.Migrations
             migrationBuilder.DeleteData(
                 table: "AspNetRoles",
                 keyColumn: "Id",
-                keyValue: "9266b7d9-64ae-4ca7-9f4b-c32659a01bea");
+                keyValue: "9b8b97cb-9344-45c6-80f7-f257e62b0768");
 
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "9b8b97cb-9344-45c6-80f7-f257e62b0768", null, "Admin", "ADMIN" });
+                values: new object[] { "501", null, "Admin", "ADMINISTRATOR" });
         }
 
         /// <inheritdoc />
@@ -27,12 +27,12 @@ namespace BeFit.Migrations
             migrationBuilder.DeleteData(
                 table: "AspNetRoles",
                 keyColumn: "Id",
-                keyValue: "9b8b97cb-9344-45c6-80f7-f257e62b0768");
+                keyValue: "501");
 
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "9266b7d9-64ae-4ca7-9f4b-c32659a01bea", null, "Admin", "ADMIN" });
+                values: new object[] { "9b8b97cb-9344-45c6-80f7-f257e62b0768", null, "Admin", "ADMIN" });
         }
     }
 }

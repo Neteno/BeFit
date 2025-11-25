@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BeFit.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251122182203_SeedRole")]
+    [Migration("20251125111526_SeedRole")]
     partial class SeedRole
     {
         /// <inheritdoc />
@@ -187,9 +187,9 @@ namespace BeFit.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "9b8b97cb-9344-45c6-80f7-f257e62b0768",
+                            Id = "501",
                             Name = "Admin",
-                            NormalizedName = "ADMIN"
+                            NormalizedName = "ADMINISTRATOR"
                         });
                 });
 
