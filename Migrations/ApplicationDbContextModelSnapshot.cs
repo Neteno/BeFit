@@ -184,9 +184,9 @@ namespace BeFit.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "501",
+                            Id = "500",
                             Name = "Admin",
-                            NormalizedName = "ADMINISTRATOR"
+                            NormalizedName = "ADMIN"
                         });
                 });
 

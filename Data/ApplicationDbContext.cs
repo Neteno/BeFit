@@ -19,7 +19,7 @@ namespace BeFit.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<IdentityRole>().HasData(new IdentityRole() {Id="501", Name = "Admin", NormalizedName = "ADMINISTRATOR" });
+            modelBuilder.Entity<IdentityRole>().HasData(new IdentityRole() {Id="500",Name = "Admin", NormalizedName = "ADMIN" });
 
         }
     }

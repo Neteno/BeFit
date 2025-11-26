@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BeFit.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251125111526_SeedRole")]
-    partial class SeedRole
+    [Migration("20251126143743_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -187,9 +187,9 @@ namespace BeFit.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "501",
+                            Id = "500",
                             Name = "Admin",
-                            NormalizedName = "ADMINISTRATOR"
+                            NormalizedName = "ADMIN"
                         });
                 });
 
