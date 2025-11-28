@@ -15,7 +15,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BeFit</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -27,17 +27,20 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         <li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="TrainingSessions" asp-action="Index">Training-Session</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="TrainingSessions" asp-action="Index">Godziny Treningow</a>
                         </li>
                         <li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="ExerciseTypes" asp-action="Index">ExerciseTypes</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="ExerciseTypes" asp-action="Index">Typ ćwiczenia</a>
                         </li>
                         <li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="ExerciseEntries" asp-action="Index">ExerciseEntries</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="ExerciseEntries" asp-action="Index">Treningi</a>
                         </li>
-                        <li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Stats" asp-action="Index">Stats</a>
-                        </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Stats" asp-action="Index">Stats</a>
+                            </li>
+                        }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
@@ -52,7 +55,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - BeFit - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2025 - BeFit by Szymon A- <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
