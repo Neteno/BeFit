@@ -14,9 +14,9 @@ namespace BeFit.Models
         [Required]
         public DateTime End { get; set; }
         public List<ExerciseEntry> ExerciseEntries { get; set; } = new();
-        [Display(Name = "Created by")]
+        [Display(Name = "Stworzone przez")]
         public string CreatedById { get; set; } = string.Empty;
-        [Display(Name = "Created by")]
+        [Display(Name = "Stworzone przez")]
         public virtual AppUser? CreatedBy { get; set; }
     }
 }

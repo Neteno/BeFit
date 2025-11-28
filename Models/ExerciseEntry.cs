@@ -23,21 +23,21 @@ namespace BeFit.Models
         public virtual ExerciseType? ExerciseType { get; set; }
 
         // Obciążenie w kg (może być 0 jeśli ćwiczenie bez obciążenia)
-        [Range(0, 10000)]
+        [Range(0, 10000, ErrorMessage = "Obciążenie musi być w zakresie od 0 do 10 000 kg.")]
         [Display(Name = "Obciążenie (kg)")]
         public int Weight { get; set; }
 
-        [Range(1, 100)]
+        [Range(1, 100, ErrorMessage = "Liczba serii musi być w zakresie od 1 do 100.")]
         [Display(Name = "Serie")]
         public int Sets { get; set; }
 
-        [Range(1, 1000)]
+        [Range(1, 1000, ErrorMessage = "Liczba powtórzeń musi być w zakresie od 1 do 1000.")]
         [Display(Name = "Powtórzenia")]
         public int Reps { get; set; }
 
-        [Display(Name = "Created by")]
+        [Display(Name = "Stworzone przez")]
         public string CreatedById { get; set; } = string.Empty;
-        [Display(Name = "Created by")]
+        [Display(Name = "Stworzone przez")]
         public virtual AppUser? CreatedBy { get; set; }
     }
 }

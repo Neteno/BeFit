@@ -8,7 +8,7 @@ namespace BeFit.Models
 
         [Required]
         [Display(Name = "Nazwa ćwiczenia")]
-        [MaxLength(100)]
+        [MaxLength(100, ErrorMessage = "Nazwa nie może przekraczać 100 znaków")]
         public string Name { get; set; }
     }
 }
