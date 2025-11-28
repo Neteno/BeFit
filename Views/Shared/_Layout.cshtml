@@ -23,20 +23,20 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="TrainingSessions" asp-action="Index">Godziny Treningow</a>
-                        </li>
+                        @* <li class="nav-item"> *@
+                        @*     <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> *@
+                        @* </li> *@
                         <li>
                             <a class="nav-link text-dark" asp-area="" asp-controller="ExerciseTypes" asp-action="Index">Typ ćwiczenia</a>
                         </li>
-                        <li>
-                            <a class="nav-link text-dark" asp-area="" asp-controller="ExerciseEntries" asp-action="Index">Treningi</a>
-                        </li>
                         @if (User.Identity.IsAuthenticated)
                         {
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="TrainingSessions" asp-action="Index">Godziny Treningow</a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="ExerciseEntries" asp-action="Index">Treningi</a>
+                            </li>
                             <li>
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Stats" asp-action="Index">Stats</a>
                             </li>

@@ -6,7 +6,6 @@ namespace BeFit.Models
     {
         [Required(ErrorMessage = "Nazwa ćwiczenia jest wymagana.")]
         [Display(Name = "Nazwa ćwiczenia")]
-        [MaxLength(100, ErrorMessage = "Nazwa ćwiczenia może mieć maksymalnie 100 znaków.")]
         public string ExerciseName { get; set; }
 
         [Required]
